@@ -1,0 +1,31 @@
+baseURL = ""
+languageCode = "en-us"
+DefaultContentLanguage = "en"
+title = "Blog của NTT"
+theme = "hugo-paper"
+
+[params]
+  color = 'linen'
+  github = 'Kawuno'
+  avatar = 'nguyenthuan3399@gmail.com'
+  name = 'Thuận'
+  bio = 'Học cùng nhau, giàu cùng nhau.'
+
+  linkFullImages = true
+  ShowBreadCrumbs = true
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+
+[menu]
+  [[menu.main]]
+    identifier = "Blog"
+    name = "Blog"
+    url = "/posts/"
+    weight = 200
+
+  [[menu.main]]
+    identifier = "About"
+    name = "About"
+    url = "/about"
+    weight = 300

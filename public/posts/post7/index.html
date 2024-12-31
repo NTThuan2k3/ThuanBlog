@@ -1,0 +1,357 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en-us"
+  dir="ltr"
+>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Angular – Xây Dựng Ứng Dụng Web Động - Blog của NTT</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  <meta name="description" content="Angular là một framework JavaScript mạnh mẽ, được thiết kế để phát triển các ứng dụng web quy mô lớn với cấu trúc rõ ràng. Tham gia khoá học Angular, tôi đã nắm vững các khái niệm cốt lõi như modules, components, services, và đặc biệt là hệ thống two-way data binding, giúp tăng hiệu suất và sự tương tác trong ứng dụng.
+Modules – Tổ Chức Dự Án Hiệu Quả
+Angular cho phép chia ứng dụng thành các modules độc lập:" />
+  <meta name="author" content="Thuận" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="//localhost:1313/main.min.css" />
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="//localhost:1313/theme.png" />
+
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://www.gravatar.com/avatar/d2cc0897f26d976f99f9b32dbf49e1f2?s=160&amp;d=identicon" />
+  
+  
+
+  
+  
+  <link rel="preload" as="image" href="//localhost:1313/github.svg" />
+  
+  
+
+  
+  
+  <script
+    defer
+    src="//localhost:1313/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+
+  
+  <link
+    rel="icon"
+    href="//localhost:1313/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="//localhost:1313/apple-touch-icon.png"
+  />
+
+  
+  <meta name="generator" content="Hugo 0.140.1">
+
+  
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-[--w] px-8 lg:justify-center">
+  <div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center">
+    <a class="-translate-y-[1px] text-2xl font-medium" href="//localhost:1313/"
+      >Blog của NTT</a
+    >
+    <div
+      class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse">
+      
+      <a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/posts/"
+        >Blog</a
+      >
+      
+      <a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about"
+        >About</a
+      >
+      
+    </nav>
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 rtl:space-x-reverse dark:invert ltr:lg:ml-14 rtl:lg:mr-14 lg:mt-0 lg:items-center"
+    >
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/Kawuno"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100vh-9rem)] max-w-[--w] px-8 pb-16 pt-14 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-14">
+    <h1 class="!my-0 pb-2.5">Angular – Xây Dựng Ứng Dụng Web Động</h1>
+
+    
+    <div class="text-xs antialiased opacity-60">
+      
+      <time>Dec 26, 2024</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><p><strong>Angular</strong> là một framework JavaScript mạnh mẽ, được thiết kế để phát triển các ứng dụng web quy mô lớn với cấu trúc rõ ràng. Tham gia khoá học Angular, tôi đã nắm vững các khái niệm cốt lõi như <strong>modules</strong>, <strong>components</strong>, <strong>services</strong>, và đặc biệt là hệ thống <strong>two-way data binding</strong>, giúp tăng hiệu suất và sự tương tác trong ứng dụng.</p>
+<h3 id="modules--tổ-chức-dự-án-hiệu-quả">Modules – Tổ Chức Dự Án Hiệu Quả</h3>
+<p>Angular cho phép chia ứng dụng thành các <strong>modules</strong> độc lập:</p>
+<ul>
+<li><strong>Tính tổ chức</strong>: Tôi đã học cách phân chia ứng dụng thành các module nhỏ, mỗi module phụ trách một chức năng cụ thể.</li>
+<li><strong>Ứng dụng thực tế</strong>: Trong dự án quản lý đặt phòng khách sạn, tôi tạo các module riêng như “Quản lý phòng”, “Quản lý khách hàng” và “Đặt phòng”, giúp mã nguồn rõ ràng và dễ bảo trì.</li>
+</ul>
+<h3 id="components--linh-hồn-của-giao-diện">Components – Linh Hồn của Giao Diện</h3>
+<p>Hệ thống <strong>components</strong> của Angular giúp xây dựng giao diện dưới dạng các phần tử tái sử dụng:</p>
+<ul>
+<li><strong>Tái sử dụng linh hoạt</strong>: Mỗi component đại diện cho một phần của giao diện, như một phòng khách sạn hoặc form đặt phòng.</li>
+<li><strong>Dự án áp dụng</strong>: Tôi đã tạo một hệ thống tìm kiếm phòng trọ, nơi mỗi phòng được hiển thị dưới dạng component, bao gồm thông tin về giá, hình ảnh và trạng thái đặt phòng.</li>
+</ul>
+<h3 id="dependency-injection--quản-lý-dịch-vụ-tối-ưu">Dependency Injection – Quản Lý Dịch Vụ Tối Ưu</h3>
+<p>Angular cung cấp <strong>dependency injection</strong>, một cơ chế mạnh mẽ để quản lý các <strong>services</strong>:</p>
+<ul>
+<li><strong>Hiệu quả trong chia sẻ dữ liệu</strong>: Tôi đã xây dựng một <strong>service quản lý API</strong>, nơi mọi component có thể truy cập dữ liệu từ server một cách dễ dàng.</li>
+<li><strong>Tính tái sử dụng</strong>: Các service này không chỉ tiết kiệm thời gian mà còn giảm thiểu sự lặp lại trong mã nguồn.</li>
+</ul>
+<h3 id="rxjs--xử-lý-dữ-liệu-bất-đồng-bộ">RxJS – Xử Lý Dữ Liệu Bất Đồng Bộ</h3>
+<p>Một trong những phần thách thức nhất là làm việc với <strong>RxJS</strong>, công cụ giúp quản lý luồng dữ liệu và sự kiện bất đồng bộ:</p>
+<ul>
+<li><strong>Xử lý API</strong>: RxJS hỗ trợ xử lý các luồng dữ liệu phức tạp từ server.</li>
+<li><strong>Ứng dụng thực tiễn</strong>: Tôi đã sử dụng RxJS để tạo luồng sự kiện thời gian thực, giúp ứng dụng phản hồi nhanh chóng khi người dùng thay đổi dữ liệu.</li>
+</ul>
+<h3 id="kết-luận">Kết Luận</h3>
+<p>Khoá học Angular đã cung cấp cho tôi kiến thức và công cụ mạnh mẽ để xây dựng các ứng dụng web phức tạp, đáp ứng nhu cầu thực tế của người dùng. Với cấu trúc rõ ràng và khả năng mở rộng dễ dàng, Angular không chỉ là framework mà còn là giải pháp hiệu quả cho các dự án web hiện đại.</p>
+<hr>
+<p><strong>Điểm nhấn cải thiện:</strong></p>
+<ol>
+<li><strong>Bố cục mạch lạc</strong>: Phân chia thành các phần rõ ràng như &ldquo;Modules&rdquo;, &ldquo;Components&rdquo;, giúp người đọc dễ theo dõi.</li>
+<li><strong>Ứng dụng thực tế</strong>: Đưa ra các ví dụ cụ thể từ dự án, tăng tính thuyết phục.</li>
+<li><strong>Ngôn ngữ chuyên nghiệp</strong>: Dùng các thuật ngữ chuẩn của Angular để nhấn mạnh kỹ năng chuyên môn.</li>
+<li><strong>Kết bài truyền cảm hứng</strong>: Tạo động lực để khám phá sâu hơn về Angular.</li>
+</ol>
+</section>
+
+  
+  
+
+  
+  
+  
+  
+  <nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  >
+    
+    
+    <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href="//localhost:1313/posts/post9/"
+      ><span>Full-Stack Development với MERN Stack</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="mx-auto flex h-[4.5rem] max-w-[--w] items-center px-8 text-xs uppercase tracking-wider opacity-60"
+>
+  <div class="mr-auto">
+  
+    &copy; 2024
+    <a class="link" href="//localhost:1313/">Blog của NTT</a>
+  
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+
+  </body>
+</html>

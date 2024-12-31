@@ -1,0 +1,337 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en-us"
+  dir="ltr"
+>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Full-Stack Development với MERN Stack - Blog của NTT</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  <meta name="description" content="MERN Stack (MongoDB, Express.js, React.js, Node.js) là một bộ công cụ mạnh mẽ giúp phát triển các ứng dụng web full-stack hiện đại. Trong khoá học về MERN Stack, tôi đã học cách tích hợp các công nghệ này để xây dựng các ứng dụng từ đầu đến cuối.
+1. MongoDB – Quản Lý Dữ Liệu NoSQL
+Điểm khởi đầu của khoá học là MongoDB, nơi tôi tìm hiểu cách lưu trữ và truy vấn dữ liệu NoSQL. MongoDB giúp tôi lưu trữ dữ liệu linh hoạt và dễ dàng mở rộng. Ví dụ, tôi đã áp dụng MongoDB để xây dựng một hệ thống quản lý sản phẩm, nơi các sản phẩm có thể được thêm, sửa, xoá dễ dàng mà không gặp phải những hạn chế của cơ sở dữ liệu quan hệ." />
+  <meta name="author" content="Thuận" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="//localhost:1313/main.min.css" />
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="//localhost:1313/theme.png" />
+
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://www.gravatar.com/avatar/d2cc0897f26d976f99f9b32dbf49e1f2?s=160&amp;d=identicon" />
+  
+  
+
+  
+  
+  <link rel="preload" as="image" href="//localhost:1313/github.svg" />
+  
+  
+
+  
+  
+  <script
+    defer
+    src="//localhost:1313/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+
+  
+  <link
+    rel="icon"
+    href="//localhost:1313/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="//localhost:1313/apple-touch-icon.png"
+  />
+
+  
+  <meta name="generator" content="Hugo 0.140.1">
+
+  
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-[--w] px-8 lg:justify-center">
+  <div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center">
+    <a class="-translate-y-[1px] text-2xl font-medium" href="//localhost:1313/"
+      >Blog của NTT</a
+    >
+    <div
+      class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse">
+      
+      <a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/posts/"
+        >Blog</a
+      >
+      
+      <a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about"
+        >About</a
+      >
+      
+    </nav>
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 rtl:space-x-reverse dark:invert ltr:lg:ml-14 rtl:lg:mr-14 lg:mt-0 lg:items-center"
+    >
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/Kawuno"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100vh-9rem)] max-w-[--w] px-8 pb-16 pt-14 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-14">
+    <h1 class="!my-0 pb-2.5">Full-Stack Development với MERN Stack</h1>
+
+    
+    <div class="text-xs antialiased opacity-60">
+      
+      <time>Dec 26, 2024</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><p><strong>MERN Stack</strong> (MongoDB, Express.js, React.js, Node.js) là một bộ công cụ mạnh mẽ giúp phát triển các ứng dụng web full-stack hiện đại. Trong khoá học về MERN Stack, tôi đã học cách tích hợp các công nghệ này để xây dựng các ứng dụng từ đầu đến cuối.</p>
+<h3 id="1-mongodb--quản-lý-dữ-liệu-nosql">1. MongoDB – Quản Lý Dữ Liệu NoSQL</h3>
+<p>Điểm khởi đầu của khoá học là <strong>MongoDB</strong>, nơi tôi tìm hiểu cách lưu trữ và truy vấn dữ liệu NoSQL. MongoDB giúp tôi lưu trữ dữ liệu linh hoạt và dễ dàng mở rộng. Ví dụ, tôi đã áp dụng MongoDB để xây dựng một hệ thống quản lý sản phẩm, nơi các sản phẩm có thể được thêm, sửa, xoá dễ dàng mà không gặp phải những hạn chế của cơ sở dữ liệu quan hệ.</p>
+<h3 id="2-expressjs-và-nodejs--xây-dựng-back-end-api">2. Express.js và Node.js – Xây Dựng Back-End API</h3>
+<p>Với <strong>Express.js</strong> và <strong>Node.js</strong>, tôi học cách xây dựng back-end API mạnh mẽ. Tôi đã tạo một ứng dụng quản lý đơn hàng, nơi các yêu cầu từ người dùng được xử lý nhanh chóng và dữ liệu được trả về dưới dạng <strong>JSON</strong>. Hệ thống xác thực bằng <strong>JWT (JSON Web Token)</strong> cũng được triển khai để bảo vệ các endpoint quan trọng, đảm bảo tính bảo mật của ứng dụng.</p>
+<h3 id="3-reactjs--giao-diện-người-dùng-tương-tác">3. React.js – Giao Diện Người Dùng Tương Tác</h3>
+<p>Ở phía <strong>front-end</strong>, <strong>React.js</strong> giúp tôi tạo giao diện người dùng trực quan và mượt mà. Sử dụng <strong>React Router</strong>, tôi đã xây dựng một ứng dụng đa trang với khả năng định tuyến động, cho phép người dùng chuyển đổi giữa các trang mà không cần tải lại trang. Việc sử dụng <strong>Redux</strong> để quản lý trạng thái toàn cục giúp ứng dụng hoạt động ổn định và dễ dàng mở rộng.</p>
+<h3 id="4-tích-hợp-và-triển-khai--kết-nối-front-end-và-back-end">4. Tích Hợp và Triển Khai – Kết Nối Front-End và Back-End</h3>
+<p>Một phần quan trọng của khoá học là <strong>tích hợp toàn bộ hệ thống</strong>. Tôi học cách kết nối <strong>front-end</strong> với <strong>back-end</strong>, đồng thời triển khai ứng dụng lên server. Quá trình này giúp tôi hiểu rõ quy trình phát triển một sản phẩm hoàn chỉnh từ A đến Z, từ việc xây dựng API cho đến triển khai ứng dụng lên môi trường sản xuất.</p>
+<h3 id="kết-luận">Kết Luận</h3>
+<p>Khoá học <strong>MERN Stack</strong> không chỉ trang bị kiến thức kỹ thuật mà còn mang lại trải nghiệm thực tế. Qua đó, tôi cảm thấy sẵn sàng hơn cho những dự án phát triển full-stack trong tương lai. Với sự kết hợp mạnh mẽ giữa MongoDB, Express.js, React.js, và Node.js, MERN Stack chắc chắn là một công cụ hữu ích trong hành trình phát triển phần mềm của tôi.</p>
+</section>
+
+  
+  
+
+  
+  
+  
+  
+  <nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  >
+    
+    <a class="ltr:pr-3 rtl:pl-3" href="//localhost:1313/posts/post7/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Angular – Xây Dựng Ứng Dụng Web Động</span></a
+    >
+    
+    
+    <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href="//localhost:1313/posts/post2/"
+      ><span>Java Collection Framework – Tăng Cường Hiệu Suất Lập Trình</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="mx-auto flex h-[4.5rem] max-w-[--w] items-center px-8 text-xs uppercase tracking-wider opacity-60"
+>
+  <div class="mr-auto">
+  
+    &copy; 2024
+    <a class="link" href="//localhost:1313/">Blog của NTT</a>
+  
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+
+  </body>
+</html>

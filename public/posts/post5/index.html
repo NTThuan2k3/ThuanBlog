@@ -1,0 +1,358 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en-us"
+  dir="ltr"
+>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Node.js – Sức Mạnh JavaScript ở Phía Server - Blog của NTT</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  <meta name="description" content="Node.js là một nền tảng mạnh mẽ, mang JavaScript từ trình duyệt lên phía server, giúp xây dựng các ứng dụng web hiệu suất cao và dễ dàng mở rộng. Khóa học Node.js mà tôi tham gia đã mở ra một thế giới mới về phát triển back-end, từ việc xử lý yêu cầu HTTP đến làm việc với cơ sở dữ liệu.
+Kiến Trúc Non-Blocking I/O – Tăng Tốc Hiệu Suất
+Một trong những đặc điểm nổi bật nhất của Node.js là kiến trúc non-blocking I/O:" />
+  <meta name="author" content="Thuận" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="//localhost:1313/main.min.css" />
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="//localhost:1313/theme.png" />
+
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://www.gravatar.com/avatar/d2cc0897f26d976f99f9b32dbf49e1f2?s=160&amp;d=identicon" />
+  
+  
+
+  
+  
+  <link rel="preload" as="image" href="//localhost:1313/github.svg" />
+  
+  
+
+  
+  
+  <script
+    defer
+    src="//localhost:1313/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+
+  
+  <link
+    rel="icon"
+    href="//localhost:1313/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="//localhost:1313/apple-touch-icon.png"
+  />
+
+  
+  <meta name="generator" content="Hugo 0.140.1">
+
+  
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-[--w] px-8 lg:justify-center">
+  <div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center">
+    <a class="-translate-y-[1px] text-2xl font-medium" href="//localhost:1313/"
+      >Blog của NTT</a
+    >
+    <div
+      class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse">
+      
+      <a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/posts/"
+        >Blog</a
+      >
+      
+      <a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about"
+        >About</a
+      >
+      
+    </nav>
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 rtl:space-x-reverse dark:invert ltr:lg:ml-14 rtl:lg:mr-14 lg:mt-0 lg:items-center"
+    >
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/Kawuno"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100vh-9rem)] max-w-[--w] px-8 pb-16 pt-14 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-14">
+    <h1 class="!my-0 pb-2.5">Node.js – Sức Mạnh JavaScript ở Phía Server</h1>
+
+    
+    <div class="text-xs antialiased opacity-60">
+      
+      <time>Dec 26, 2024</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><p><strong>Node.js</strong> là một nền tảng mạnh mẽ, mang JavaScript từ trình duyệt lên phía server, giúp xây dựng các ứng dụng web hiệu suất cao và dễ dàng mở rộng. Khóa học Node.js mà tôi tham gia đã mở ra một thế giới mới về phát triển back-end, từ việc xử lý yêu cầu HTTP đến làm việc với cơ sở dữ liệu.</p>
+<h3 id="kiến-trúc-non-blocking-io--tăng-tốc-hiệu-suất">Kiến Trúc Non-Blocking I/O – Tăng Tốc Hiệu Suất</h3>
+<p>Một trong những đặc điểm nổi bật nhất của Node.js là <strong>kiến trúc non-blocking I/O</strong>:</p>
+<ul>
+<li><strong>Xử lý đồng thời nhiều yêu cầu</strong>: Tôi đã tận dụng tính năng này để phát triển một ứng dụng chat thời gian thực sử dụng <strong>Socket.IO</strong>, mang đến trải nghiệm nhanh chóng và mượt mà cho người dùng.</li>
+<li><strong>Tiết kiệm tài nguyên hệ thống</strong>: Node.js hoạt động tối ưu ngay cả khi xử lý lượng lớn kết nối đồng thời.</li>
+</ul>
+<h3 id="xây-dựng-api-restful-với-expressjs">Xây Dựng API RESTful với Express.js</h3>
+<p>Khóa học cũng giúp tôi làm quen với <strong>Express.js</strong>, một framework phổ biến giúp đơn giản hóa việc phát triển web:</p>
+<ul>
+<li><strong>API quản lý sản phẩm</strong>: Tôi đã tạo một API cho phép thêm, sửa, xóa và tìm kiếm thông tin sản phẩm.</li>
+<li><strong>Tích hợp với MongoDB</strong>: Sử dụng MongoDB, tôi xây dựng hệ thống lưu trữ và truy xuất dữ liệu hiệu quả, đáp ứng tốt nhu cầu của người dùng.</li>
+</ul>
+<h3 id="bảo-mật-với-json-web-tokens-jwt">Bảo Mật với JSON Web Tokens (JWT)</h3>
+<p>Bảo mật là một phần không thể thiếu khi phát triển API:</p>
+<ul>
+<li><strong>Xác thực và phân quyền</strong>: Nhờ <strong>JWT</strong>, tôi đã bảo vệ thành công các endpoint quan trọng, đảm bảo chỉ những người dùng có thẩm quyền mới được truy cập.</li>
+<li><strong>Ứng dụng thực tế</strong>: Các kỹ thuật này giúp tăng tính an toàn và tin cậy cho ứng dụng.</li>
+</ul>
+<h3 id="nodejs--chìa-khóa-full-stack">Node.js – Chìa Khóa Full-Stack</h3>
+<p>Node.js không chỉ là công cụ phát triển back-end, mà còn là bước đệm quan trọng để tôi khám phá và làm chủ các công nghệ <strong>full-stack</strong>.</p>
+<ul>
+<li>Sau khóa học, tôi tự tin áp dụng Node.js vào các dự án thực tế, từ hệ thống nhỏ gọn đến các ứng dụng phức tạp, nâng cao kỹ năng và đóng góp giá trị cho cộng đồng lập trình.</li>
+</ul>
+<hr>
+<p><strong>Tối ưu hóa bài viết</strong>:</p>
+<ol>
+<li><strong>Cấu trúc rõ ràng</strong>: Chia bài viết thành các phần cụ thể, dễ tiếp cận.</li>
+<li><strong>Ngôn ngữ chuyên nghiệp</strong>: Làm nổi bật các thành tựu và kỹ năng thực tế bạn đã đạt được.</li>
+<li><strong>Điểm nhấn cá nhân</strong>: Nhấn mạnh những ứng dụng thực tiễn mà bạn đã phát triển, tạo ấn tượng với người đọc.</li>
+<li><strong>Kết thúc truyền cảm hứng</strong>: Gợi mở tiềm năng Node.js như một công cụ mạnh mẽ cho sự phát triển full-stack.</li>
+</ol>
+</section>
+
+  
+  
+
+  
+  
+  
+  
+  <nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  >
+    
+    <a class="ltr:pr-3 rtl:pl-3" href="//localhost:1313/posts/post1/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Lập Trình Hướng Đối Tượng trong Java</span></a
+    >
+    
+    
+    <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href="//localhost:1313/posts/post6/"
+      ><span>React.js – Xây Dựng Giao Diện Người Dùng Tối Ưu</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="mx-auto flex h-[4.5rem] max-w-[--w] items-center px-8 text-xs uppercase tracking-wider opacity-60"
+>
+  <div class="mr-auto">
+  
+    &copy; 2024
+    <a class="link" href="//localhost:1313/">Blog của NTT</a>
+  
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+
+  </body>
+</html>

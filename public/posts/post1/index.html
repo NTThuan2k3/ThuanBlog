@@ -1,0 +1,343 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en-us"
+  dir="ltr"
+>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Lập Trình Hướng Đối Tượng trong Java - Blog của NTT</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  <meta name="description" content="Lập trình hướng đối tượng (OOP) là một trong những khái niệm quan trọng nhất trong Java, cung cấp nền tảng để xây dựng các ứng dụng có cấu trúc, dễ bảo trì và tái sử dụng. Trong khoá học về OOP, tôi đã tìm hiểu sâu về các khái niệm như class, object, inheritance, polymorphism, và encapsulation.
+
+Các Khái Niệm Cơ Bản Trong OOP
+Class và Object
+Một phần thú vị trong khóa học là cách sử dụng class để đại diện cho các thực thể trong thế giới thực. Class là khuôn mẫu, trong khi object là các thực thể cụ thể được tạo ra từ class. Ví dụ, trong một ứng dụng quản lý sinh viên, SinhVien có thể là class, còn từng sinh viên cụ thể là các object." />
+  <meta name="author" content="Thuận" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="//localhost:1313/main.min.css" />
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="//localhost:1313/theme.png" />
+
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://www.gravatar.com/avatar/d2cc0897f26d976f99f9b32dbf49e1f2?s=160&amp;d=identicon" />
+  
+  
+
+  
+  
+  <link rel="preload" as="image" href="//localhost:1313/github.svg" />
+  
+  
+
+  
+  
+  <script
+    defer
+    src="//localhost:1313/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+
+  
+  <link
+    rel="icon"
+    href="//localhost:1313/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="//localhost:1313/apple-touch-icon.png"
+  />
+
+  
+  <meta name="generator" content="Hugo 0.140.1">
+
+  
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-[--w] px-8 lg:justify-center">
+  <div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center">
+    <a class="-translate-y-[1px] text-2xl font-medium" href="//localhost:1313/"
+      >Blog của NTT</a
+    >
+    <div
+      class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse">
+      
+      <a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/posts/"
+        >Blog</a
+      >
+      
+      <a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about"
+        >About</a
+      >
+      
+    </nav>
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 rtl:space-x-reverse dark:invert ltr:lg:ml-14 rtl:lg:mr-14 lg:mt-0 lg:items-center"
+    >
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/Kawuno"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100vh-9rem)] max-w-[--w] px-8 pb-16 pt-14 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-14">
+    <h1 class="!my-0 pb-2.5">Lập Trình Hướng Đối Tượng trong Java</h1>
+
+    
+    <div class="text-xs antialiased opacity-60">
+      
+      <time>Dec 26, 2024</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><p>Lập trình hướng đối tượng (OOP) là một trong những khái niệm quan trọng nhất trong Java, cung cấp nền tảng để xây dựng các ứng dụng có cấu trúc, dễ bảo trì và tái sử dụng. Trong khoá học về OOP, tôi đã tìm hiểu sâu về các khái niệm như class, object, inheritance, polymorphism, và encapsulation.</p>
+<p><img src="/images/java.jpg" alt="Ảnh"></p>
+<h3 id="các-khái-niệm-cơ-bản-trong-oop">Các Khái Niệm Cơ Bản Trong OOP</h3>
+<h4 id="class-và-object">Class và Object</h4>
+<p>Một phần thú vị trong khóa học là cách sử dụng <strong>class</strong> để đại diện cho các thực thể trong thế giới thực. Class là khuôn mẫu, trong khi <strong>object</strong> là các thực thể cụ thể được tạo ra từ class. Ví dụ, trong một ứng dụng quản lý sinh viên, <code>SinhVien</code> có thể là class, còn từng sinh viên cụ thể là các object.</p>
+<h4 id="inheritance-kế-thừa">Inheritance (Kế Thừa)</h4>
+<p><strong>Inheritance</strong> cho phép một class con thừa hưởng các thuộc tính và phương thức của class cha. Điều này giúp tái sử dụng mã và giảm sự trùng lặp. Tôi cũng học cách áp dụng nguyên tắc <strong>polymorphism</strong> để cho phép một phương thức trong class cha có thể hoạt động khác nhau trong các class con, giúp ứng dụng trở nên linh hoạt hơn.</p>
+<h4 id="encapsulation-đóng-gói">Encapsulation (Đóng Gói)</h4>
+<p>Ngoài ra, <strong>encapsulation</strong> là một khái niệm quan trọng khác, bảo vệ dữ liệu của class thông qua việc sử dụng các từ khóa như <code>private</code>, <code>protected</code>, và <code>public</code>. Điều này không chỉ đảm bảo an toàn dữ liệu mà còn giúp tổ chức mã rõ ràng hơn.</p>
+<h3 id="ứng-dụng-thực-tiễn">Ứng Dụng Thực Tiễn</h3>
+<p>Một điểm nhấn trong khóa học là việc áp dụng các nguyên tắc <strong>SOLID</strong> để cải thiện thiết kế phần mềm. Tôi đã học cách chia nhỏ các chức năng, giữ cho các class đơn giản và chỉ chịu trách nhiệm duy nhất một nhiệm vụ.</p>
+<h4 id="dự-án-ứng-dụng-quản-lý-thư-viện">Dự Án Ứng Dụng Quản Lý Thư Viện</h4>
+<p>Trong dự án thực hành, tôi đã thực hiện thành công một ứng dụng quản lý thư viện, nơi tôi sử dụng các class như <code>Sach</code>, <code>DocGia</code>, và <code>MuonTra</code> để tạo nên một hệ thống hoạt động mượt mà. Các nguyên tắc OOP đã giúp tôi xây dựng hệ thống dễ mở rộng và bảo trì.</p>
+<h3 id="kết-luận">Kết Luận</h3>
+<p>Kết thúc khóa học, tôi nhận ra rằng lập trình hướng đối tượng không chỉ là công cụ mạnh mẽ trong Java mà còn là nền tảng để giải quyết các vấn đề phức tạp trong lập trình phần mềm hiện đại. Những kiến thức này đã mang lại cho tôi sự tự tin để tham gia và phát triển các dự án lớn hơn trong tương lai.</p>
+</section>
+
+  
+  
+
+  
+  
+  
+  
+  <nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  >
+    
+    <a class="ltr:pr-3 rtl:pl-3" href="//localhost:1313/posts/post4/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>JavaScript – Linh Hồn của Web Hiện Đại</span></a
+    >
+    
+    
+    <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href="//localhost:1313/posts/post5/"
+      ><span>Node.js – Sức Mạnh JavaScript ở Phía Server</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="mx-auto flex h-[4.5rem] max-w-[--w] items-center px-8 text-xs uppercase tracking-wider opacity-60"
+>
+  <div class="mr-auto">
+  
+    &copy; 2024
+    <a class="link" href="//localhost:1313/">Blog của NTT</a>
+  
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+
+  </body>
+</html>

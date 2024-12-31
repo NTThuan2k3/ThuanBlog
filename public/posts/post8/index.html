@@ -1,0 +1,337 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en-us"
+  dir="ltr"
+>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>TypeScript – Cánh Tay Đắc Lực cho JavaScript - Blog của NTT</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  <meta name="description" content="TypeScript là một siêu ngôn ngữ của JavaScript, mang lại sự mạnh mẽ và an toàn hơn trong việc phát triển ứng dụng. Sau khi hoàn thành khoá học về TypeScript, tôi đã học được cách sử dụng các tính năng nổi bật như kiểu dữ liệu tĩnh, interface, generics, và cách tích hợp TypeScript với các framework như Angular.
+1. Kiểu Dữ Liệu Tĩnh – Giảm Thiểu Lỗi Phát Sinh
+Một trong những điểm nổi bật của TypeScript là khả năng xác định kiểu dữ liệu tĩnh ngay từ khi viết mã. Điều này giúp giảm thiểu các lỗi trong quá trình phát triển. Ví dụ, khi xây dựng một hệ thống quản lý nhân viên, tôi đã định nghĩa kiểu dữ liệu Employee để đảm bảo rằng chỉ các thuộc tính hợp lệ mới được truyền vào hệ thống, từ đó giúp hệ thống trở nên ổn định và dễ bảo trì hơn." />
+  <meta name="author" content="Thuận" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="//localhost:1313/main.min.css" />
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="//localhost:1313/theme.png" />
+
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://www.gravatar.com/avatar/d2cc0897f26d976f99f9b32dbf49e1f2?s=160&amp;d=identicon" />
+  
+  
+
+  
+  
+  <link rel="preload" as="image" href="//localhost:1313/github.svg" />
+  
+  
+
+  
+  
+  <script
+    defer
+    src="//localhost:1313/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+
+  
+  <link
+    rel="icon"
+    href="//localhost:1313/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="//localhost:1313/apple-touch-icon.png"
+  />
+
+  
+  <meta name="generator" content="Hugo 0.140.1">
+
+  
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-[--w] px-8 lg:justify-center">
+  <div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center">
+    <a class="-translate-y-[1px] text-2xl font-medium" href="//localhost:1313/"
+      >Blog của NTT</a
+    >
+    <div
+      class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse">
+      
+      <a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/posts/"
+        >Blog</a
+      >
+      
+      <a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about"
+        >About</a
+      >
+      
+    </nav>
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 rtl:space-x-reverse dark:invert ltr:lg:ml-14 rtl:lg:mr-14 lg:mt-0 lg:items-center"
+    >
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/Kawuno"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100vh-9rem)] max-w-[--w] px-8 pb-16 pt-14 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-14">
+    <h1 class="!my-0 pb-2.5">TypeScript – Cánh Tay Đắc Lực cho JavaScript</h1>
+
+    
+    <div class="text-xs antialiased opacity-60">
+      
+      <time>Dec 26, 2024</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><p>TypeScript là một siêu ngôn ngữ của JavaScript, mang lại sự mạnh mẽ và an toàn hơn trong việc phát triển ứng dụng. Sau khi hoàn thành khoá học về TypeScript, tôi đã học được cách sử dụng các tính năng nổi bật như <strong>kiểu dữ liệu tĩnh</strong>, <strong>interface</strong>, <strong>generics</strong>, và cách tích hợp TypeScript với các framework như <strong>Angular</strong>.</p>
+<h3 id="1-kiểu-dữ-liệu-tĩnh--giảm-thiểu-lỗi-phát-sinh">1. Kiểu Dữ Liệu Tĩnh – Giảm Thiểu Lỗi Phát Sinh</h3>
+<p>Một trong những điểm nổi bật của TypeScript là khả năng xác định kiểu dữ liệu tĩnh ngay từ khi viết mã. Điều này giúp giảm thiểu các lỗi trong quá trình phát triển. Ví dụ, khi xây dựng một hệ thống quản lý nhân viên, tôi đã định nghĩa kiểu dữ liệu <code>Employee</code> để đảm bảo rằng chỉ các thuộc tính hợp lệ mới được truyền vào hệ thống, từ đó giúp hệ thống trở nên ổn định và dễ bảo trì hơn.</p>
+<h3 id="2-interface--định-nghĩa-các-hợp-đồng">2. Interface – Định Nghĩa Các Hợp Đồng</h3>
+<p>Một phần quan trọng khác trong TypeScript là <strong>interface</strong>, giúp định nghĩa các hợp đồng trong mã nguồn. Interface giúp tôi xác định cấu trúc của các đối tượng dữ liệu, từ đó tạo ra mã nguồn dễ hiểu và dễ bảo trì. Ví dụ, tôi sử dụng interface để đảm bảo rằng các đối tượng nhân viên đều tuân thủ cùng một cấu trúc dữ liệu nhất quán.</p>
+<h3 id="3-generics--tính-linh-hoạt-cao">3. Generics – Tính Linh Hoạt Cao</h3>
+<p>Khoá học cũng giúp tôi hiểu rõ về <strong>generics</strong>, một công cụ mạnh mẽ để xây dựng các hàm và class có tính linh hoạt cao. Thông qua việc sử dụng generics, tôi đã xây dựng một class lưu trữ dữ liệu đa mục đích, có thể làm việc với nhiều loại dữ liệu khác nhau mà vẫn đảm bảo an toàn về kiểu dữ liệu. Điều này giúp giảm thiểu việc phải viết mã lặp lại và tối ưu hóa việc phát triển ứng dụng.</p>
+<h3 id="4-tích-hợp-typescript-vào-dự-án-hiện-tại">4. Tích Hợp TypeScript vào Dự Án Hiện Tại</h3>
+<p>TypeScript không chỉ mạnh mẽ mà còn dễ dàng tích hợp với các dự án JavaScript hiện tại. Tôi đã thử chuyển một ứng dụng từ JavaScript sang TypeScript và phát hiện ra nhiều lỗi mà trước đây tôi không nhận ra. Việc chuyển đổi này giúp tôi phát hiện và khắc phục các vấn đề về kiểu dữ liệu cũng như làm cho mã nguồn trở nên dễ đọc và dễ bảo trì hơn.</p>
+<h3 id="kết-luận">Kết Luận</h3>
+<p>Kết thúc khoá học, tôi nhận ra rằng TypeScript không chỉ là một công cụ hỗ trợ, mà còn là yếu tố quan trọng giúp tôi nâng cao chất lượng và hiệu quả của các dự án phát triển phần mềm. Với những tính năng mạnh mẽ và khả năng phát hiện lỗi ngay từ khi viết mã, TypeScript thực sự là một cánh tay đắc lực cho các lập trình viên JavaScript.</p>
+</section>
+
+  
+  
+
+  
+  
+  
+  
+  <nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  >
+    
+    <a class="ltr:pr-3 rtl:pl-3" href="//localhost:1313/posts/post6/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>React.js – Xây Dựng Giao Diện Người Dùng Tối Ưu</span></a
+    >
+    
+    
+    <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href="//localhost:1313/posts/post3/"
+      ><span>Xây Dựng Web Back-End với Spring Boot</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="mx-auto flex h-[4.5rem] max-w-[--w] items-center px-8 text-xs uppercase tracking-wider opacity-60"
+>
+  <div class="mr-auto">
+  
+    &copy; 2024
+    <a class="link" href="//localhost:1313/">Blog của NTT</a>
+  
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+
+  </body>
+</html>

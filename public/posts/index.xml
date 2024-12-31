@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Blog của NTT</title>
+    <link>//localhost:1313/posts/</link>
+    <description>Recent content in Posts on Blog của NTT</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Angular – Xây Dựng Ứng Dụng Web Động</title>
+      <link>//localhost:1313/posts/post7/</link>
+      <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/post7/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Angular&lt;/strong&gt; là một framework JavaScript mạnh mẽ, được thiết kế để phát triển các ứng dụng web quy mô lớn với cấu trúc rõ ràng. Tham gia khoá học Angular, tôi đã nắm vững các khái niệm cốt lõi như &lt;strong&gt;modules&lt;/strong&gt;, &lt;strong&gt;components&lt;/strong&gt;, &lt;strong&gt;services&lt;/strong&gt;, và đặc biệt là hệ thống &lt;strong&gt;two-way data binding&lt;/strong&gt;, giúp tăng hiệu suất và sự tương tác trong ứng dụng.&lt;/p&gt;&#xA;&lt;h3 id=&#34;modules--tổ-chức-dự-án-hiệu-quả&#34;&gt;Modules – Tổ Chức Dự Án Hiệu Quả&lt;/h3&gt;&#xA;&lt;p&gt;Angular cho phép chia ứng dụng thành các &lt;strong&gt;modules&lt;/strong&gt; độc lập:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Full-Stack Development với MERN Stack</title>
+      <link>//localhost:1313/posts/post9/</link>
+      <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/post9/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;MERN Stack&lt;/strong&gt; (MongoDB, Express.js, React.js, Node.js) là một bộ công cụ mạnh mẽ giúp phát triển các ứng dụng web full-stack hiện đại. Trong khoá học về MERN Stack, tôi đã học cách tích hợp các công nghệ này để xây dựng các ứng dụng từ đầu đến cuối.&lt;/p&gt;&#xA;&lt;h3 id=&#34;1-mongodb--quản-lý-dữ-liệu-nosql&#34;&gt;1. MongoDB – Quản Lý Dữ Liệu NoSQL&lt;/h3&gt;&#xA;&lt;p&gt;Điểm khởi đầu của khoá học là &lt;strong&gt;MongoDB&lt;/strong&gt;, nơi tôi tìm hiểu cách lưu trữ và truy vấn dữ liệu NoSQL. MongoDB giúp tôi lưu trữ dữ liệu linh hoạt và dễ dàng mở rộng. Ví dụ, tôi đã áp dụng MongoDB để xây dựng một hệ thống quản lý sản phẩm, nơi các sản phẩm có thể được thêm, sửa, xoá dễ dàng mà không gặp phải những hạn chế của cơ sở dữ liệu quan hệ.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Java Collection Framework – Tăng Cường Hiệu Suất Lập Trình</title>
+      <link>//localhost:1313/posts/post2/</link>
+      <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/post2/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Java Collection Framework&lt;/strong&gt; là một phần quan trọng trong việc xử lý tập hợp dữ liệu, giúp tôi làm việc một cách hiệu quả và linh hoạt. Khóa học này đã giúp tôi hiểu sâu về các cấu trúc dữ liệu như &lt;strong&gt;List&lt;/strong&gt;, &lt;strong&gt;Set&lt;/strong&gt;, và &lt;strong&gt;Map&lt;/strong&gt;, mỗi cấu trúc mang những đặc điểm riêng phù hợp với từng bài toán cụ thể.&lt;/p&gt;&#xA;&lt;h3 id=&#34;khám-phá-các-cấu-trúc-dữ-liệu&#34;&gt;Khám Phá Các Cấu Trúc Dữ Liệu&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;ArrayList&lt;/strong&gt; và &lt;strong&gt;LinkedList&lt;/strong&gt;:&lt;br&gt;&#xA;Tôi đã tìm hiểu cách sử dụng &lt;strong&gt;ArrayList&lt;/strong&gt; để lưu trữ và truy xuất dữ liệu nhanh chóng, trong khi &lt;strong&gt;LinkedList&lt;/strong&gt; tỏ ra hiệu quả hơn trong các bài toán yêu cầu thao tác thêm hoặc xóa phần tử liên tục. Hiểu rõ sự khác biệt về hiệu suất giữa hai cấu trúc này đã giúp tôi tối ưu hóa ứng dụng một cách đáng kể.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>JavaScript – Linh Hồn của Web Hiện Đại</title>
+      <link>//localhost:1313/posts/post4/</link>
+      <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/post4/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;JavaScript&lt;/strong&gt; là một ngôn ngữ lập trình không thể thiếu trong thế giới web hiện đại, đóng vai trò như &amp;ldquo;linh hồn&amp;rdquo; của các trang web tương tác. Khóa học JavaScript mà tôi tham gia đã giúp tôi xây dựng nền tảng vững chắc từ các kiến thức cơ bản đến các khái niệm nâng cao, mang lại sự tự tin trong việc tạo ra các ứng dụng web mạnh mẽ.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lập Trình Hướng Đối Tượng trong Java</title>
+      <link>//localhost:1313/posts/post1/</link>
+      <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/post1/</guid>
+      <description>&lt;p&gt;Lập trình hướng đối tượng (OOP) là một trong những khái niệm quan trọng nhất trong Java, cung cấp nền tảng để xây dựng các ứng dụng có cấu trúc, dễ bảo trì và tái sử dụng. Trong khoá học về OOP, tôi đã tìm hiểu sâu về các khái niệm như class, object, inheritance, polymorphism, và encapsulation.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/java.jpg&#34; alt=&#34;Ảnh&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;các-khái-niệm-cơ-bản-trong-oop&#34;&gt;Các Khái Niệm Cơ Bản Trong OOP&lt;/h3&gt;&#xA;&lt;h4 id=&#34;class-và-object&#34;&gt;Class và Object&lt;/h4&gt;&#xA;&lt;p&gt;Một phần thú vị trong khóa học là cách sử dụng &lt;strong&gt;class&lt;/strong&gt; để đại diện cho các thực thể trong thế giới thực. Class là khuôn mẫu, trong khi &lt;strong&gt;object&lt;/strong&gt; là các thực thể cụ thể được tạo ra từ class. Ví dụ, trong một ứng dụng quản lý sinh viên, &lt;code&gt;SinhVien&lt;/code&gt; có thể là class, còn từng sinh viên cụ thể là các object.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Node.js – Sức Mạnh JavaScript ở Phía Server</title>
+      <link>//localhost:1313/posts/post5/</link>
+      <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/post5/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Node.js&lt;/strong&gt; là một nền tảng mạnh mẽ, mang JavaScript từ trình duyệt lên phía server, giúp xây dựng các ứng dụng web hiệu suất cao và dễ dàng mở rộng. Khóa học Node.js mà tôi tham gia đã mở ra một thế giới mới về phát triển back-end, từ việc xử lý yêu cầu HTTP đến làm việc với cơ sở dữ liệu.&lt;/p&gt;&#xA;&lt;h3 id=&#34;kiến-trúc-non-blocking-io--tăng-tốc-hiệu-suất&#34;&gt;Kiến Trúc Non-Blocking I/O – Tăng Tốc Hiệu Suất&lt;/h3&gt;&#xA;&lt;p&gt;Một trong những đặc điểm nổi bật nhất của Node.js là &lt;strong&gt;kiến trúc non-blocking I/O&lt;/strong&gt;:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>React.js – Xây Dựng Giao Diện Người Dùng Tối Ưu</title>
+      <link>//localhost:1313/posts/post6/</link>
+      <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/post6/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;React.js&lt;/strong&gt; là một thư viện JavaScript hàng đầu, được thiết kế để xây dựng các giao diện người dùng động, linh hoạt và dễ mở rộng. Khoá học React.js đã trang bị cho tôi kiến thức vững chắc từ cơ bản đến nâng cao, giúp tôi tạo ra các ứng dụng web hiện đại và tối ưu.&lt;/p&gt;&#xA;&lt;h3 id=&#34;quản-lý-giao-diện-với-components&#34;&gt;Quản Lý Giao Diện với Components&lt;/h3&gt;&#xA;&lt;p&gt;Một trong những điểm mạnh nhất của React.js là khả năng &lt;strong&gt;chia nhỏ giao diện thành các components&lt;/strong&gt; độc lập:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TypeScript – Cánh Tay Đắc Lực cho JavaScript</title>
+      <link>//localhost:1313/posts/post8/</link>
+      <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/post8/</guid>
+      <description>&lt;p&gt;TypeScript là một siêu ngôn ngữ của JavaScript, mang lại sự mạnh mẽ và an toàn hơn trong việc phát triển ứng dụng. Sau khi hoàn thành khoá học về TypeScript, tôi đã học được cách sử dụng các tính năng nổi bật như &lt;strong&gt;kiểu dữ liệu tĩnh&lt;/strong&gt;, &lt;strong&gt;interface&lt;/strong&gt;, &lt;strong&gt;generics&lt;/strong&gt;, và cách tích hợp TypeScript với các framework như &lt;strong&gt;Angular&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;1-kiểu-dữ-liệu-tĩnh--giảm-thiểu-lỗi-phát-sinh&#34;&gt;1. Kiểu Dữ Liệu Tĩnh – Giảm Thiểu Lỗi Phát Sinh&lt;/h3&gt;&#xA;&lt;p&gt;Một trong những điểm nổi bật của TypeScript là khả năng xác định kiểu dữ liệu tĩnh ngay từ khi viết mã. Điều này giúp giảm thiểu các lỗi trong quá trình phát triển. Ví dụ, khi xây dựng một hệ thống quản lý nhân viên, tôi đã định nghĩa kiểu dữ liệu &lt;code&gt;Employee&lt;/code&gt; để đảm bảo rằng chỉ các thuộc tính hợp lệ mới được truyền vào hệ thống, từ đó giúp hệ thống trở nên ổn định và dễ bảo trì hơn.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Xây Dựng Web Back-End với Spring Boot</title>
+      <link>//localhost:1313/posts/post3/</link>
+      <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/post3/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Spring Boot&lt;/strong&gt; là một framework nổi bật trong thế giới Java, giúp đơn giản hóa và tăng tốc quá trình phát triển các ứng dụng web back-end. Trong khóa học về Spring Boot, tôi đã học cách xây dựng RESTful API, xử lý yêu cầu HTTP, và tích hợp cơ sở dữ liệu một cách hiệu quả.&lt;/p&gt;&#xA;&lt;h3 id=&#34;điểm-nổi-bật-của-spring-boot&#34;&gt;Điểm Nổi Bật của Spring Boot&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Tự động cấu hình&lt;/strong&gt;:&lt;br&gt;&#xA;Một trong những tính năng ấn tượng nhất của Spring Boot là khả năng tự động cấu hình. Điều này giúp giảm thiểu thời gian thiết lập dự án, cho phép tôi tập trung vào phát triển tính năng. Trong dự án quản lý khách hàng, tôi đã sử dụng Spring Boot để xây dựng các API thực hiện các thao tác thêm, sửa, xóa, và truy xuất thông tin khách hàng.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
