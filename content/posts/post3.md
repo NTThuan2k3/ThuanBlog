@@ -1,8 +1,11 @@
 ---
 date: '2024-12-26'
 draft: false
-title: 'Xây Dựng Web Back-End với Spring Boot'
+title: 'Bài 3: Xây Dựng Web Back-End với Spring Boot'
 ---
+
+![Ảnh](/images/springboot.jpg)
+
 
 **Spring Boot** là một framework nổi bật trong thế giới Java, giúp đơn giản hóa và tăng tốc quá trình phát triển các ứng dụng web back-end. Trong khóa học về Spring Boot, tôi đã học cách xây dựng RESTful API, xử lý yêu cầu HTTP, và tích hợp cơ sở dữ liệu một cách hiệu quả.
 

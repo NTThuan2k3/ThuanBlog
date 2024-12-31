@@ -1,14 +1,18 @@
 ---
 date: '2024-12-26'
 draft: false
-title: 'Full-Stack Development với MERN Stack'
+title: 'Bài 9: Full-Stack Development với MERN Stack'
 ---
 
 **MERN Stack** (MongoDB, Express.js, React.js, Node.js) là một bộ công cụ mạnh mẽ giúp phát triển các ứng dụng web full-stack hiện đại. Trong khoá học về MERN Stack, tôi đã học cách tích hợp các công nghệ này để xây dựng các ứng dụng từ đầu đến cuối.
 
+![Ảnh](/images/mean.jpg)
+
 ### 1. MongoDB – Quản Lý Dữ Liệu NoSQL
 
 Điểm khởi đầu của khoá học là **MongoDB**, nơi tôi tìm hiểu cách lưu trữ và truy vấn dữ liệu NoSQL. MongoDB giúp tôi lưu trữ dữ liệu linh hoạt và dễ dàng mở rộng. Ví dụ, tôi đã áp dụng MongoDB để xây dựng một hệ thống quản lý sản phẩm, nơi các sản phẩm có thể được thêm, sửa, xoá dễ dàng mà không gặp phải những hạn chế của cơ sở dữ liệu quan hệ.
+
+![Ảnh](/images/mongo.png)
 
 ### 2. Express.js và Node.js – Xây Dựng Back-End API
 

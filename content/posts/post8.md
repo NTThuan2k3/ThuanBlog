@@ -1,10 +1,12 @@
 ---
 date: '2024-12-26'
 draft: false
-title: 'TypeScript – Cánh Tay Đắc Lực cho JavaScript'
+title: 'Bài 8: TypeScript – Cánh Tay Đắc Lực cho JavaScript'
 ---
 
 TypeScript là một siêu ngôn ngữ của JavaScript, mang lại sự mạnh mẽ và an toàn hơn trong việc phát triển ứng dụng. Sau khi hoàn thành khoá học về TypeScript, tôi đã học được cách sử dụng các tính năng nổi bật như **kiểu dữ liệu tĩnh**, **interface**, **generics**, và cách tích hợp TypeScript với các framework như **Angular**.
+
+![Ảnh](/images/typescript.png)
 
 ### 1. Kiểu Dữ Liệu Tĩnh – Giảm Thiểu Lỗi Phát Sinh
 

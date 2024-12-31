@@ -1,10 +1,12 @@
 ---
 date: '2024-12-26'
 draft: false
-title: 'JavaScript – Linh Hồn của Web Hiện Đại'
+title: 'Bài 4: JavaScript – Linh Hồn của Web Hiện Đại'
 ---
 
 **JavaScript** là một ngôn ngữ lập trình không thể thiếu trong thế giới web hiện đại, đóng vai trò như "linh hồn" của các trang web tương tác. Khóa học JavaScript mà tôi tham gia đã giúp tôi xây dựng nền tảng vững chắc từ các kiến thức cơ bản đến các khái niệm nâng cao, mang lại sự tự tin trong việc tạo ra các ứng dụng web mạnh mẽ.
+
+![Ảnh](/images/javascript.jpg)
 
 ### Tương Tác với DOM – Mang Sự Sống Đến Giao Diện
 Một trong những phần thú vị nhất của khóa học là làm việc với **DOM (Document Object Model)**:

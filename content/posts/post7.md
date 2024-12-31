@@ -1,10 +1,12 @@
 ---
 date: '2024-12-26'
 draft: false
-title: 'Angular – Xây Dựng Ứng Dụng Web Động'
+title: 'Bài 7: Angular – Xây Dựng Ứng Dụng Web Động'
 ---
 
 **Angular** là một framework JavaScript mạnh mẽ, được thiết kế để phát triển các ứng dụng web quy mô lớn với cấu trúc rõ ràng. Tham gia khoá học Angular, tôi đã nắm vững các khái niệm cốt lõi như **modules**, **components**, **services**, và đặc biệt là hệ thống **two-way data binding**, giúp tăng hiệu suất và sự tương tác trong ứng dụng.
+
+![Ảnh](/images/angular.png)
 
 ### Modules – Tổ Chức Dự Án Hiệu Quả
 Angular cho phép chia ứng dụng thành các **modules** độc lập:

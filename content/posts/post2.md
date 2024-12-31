@@ -1,10 +1,13 @@
 ---
 date: '2024-12-26'
 draft: false
-title: 'Java Collection Framework – Tăng Cường Hiệu Suất Lập Trình'
+title: 'Bài 2: Java Collection Framework – Tăng Cường Hiệu Suất Lập Trình'
 ---
 
 **Java Collection Framework** là một phần quan trọng trong việc xử lý tập hợp dữ liệu, giúp tôi làm việc một cách hiệu quả và linh hoạt. Khóa học này đã giúp tôi hiểu sâu về các cấu trúc dữ liệu như **List**, **Set**, và **Map**, mỗi cấu trúc mang những đặc điểm riêng phù hợp với từng bài toán cụ thể.
+
+![Ảnh](/images/post2.png)
+
 
 ### Khám Phá Các Cấu Trúc Dữ Liệu
 - **ArrayList** và **LinkedList**:  

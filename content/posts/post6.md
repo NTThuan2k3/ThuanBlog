@@ -1,10 +1,12 @@
 ---
 date: '2024-12-26'
 draft: false
-title: 'React.js – Xây Dựng Giao Diện Người Dùng Tối Ưu'
+title: 'Bài 6: React.js – Xây Dựng Giao Diện Người Dùng Tối Ưu'
 ---
 
 **React.js** là một thư viện JavaScript hàng đầu, được thiết kế để xây dựng các giao diện người dùng động, linh hoạt và dễ mở rộng. Khoá học React.js đã trang bị cho tôi kiến thức vững chắc từ cơ bản đến nâng cao, giúp tôi tạo ra các ứng dụng web hiện đại và tối ưu.
+
+![Ảnh](/images/reactjs.png)
 
 ### Quản Lý Giao Diện với Components
 Một trong những điểm mạnh nhất của React.js là khả năng **chia nhỏ giao diện thành các components** độc lập:
@@ -18,6 +20,8 @@ React.js sử dụng **state** và **props** để quản lý dữ liệu trong 
 
 Tôi đã ứng dụng state và props để xây dựng các giao diện trực quan, nơi mọi thay đổi trong dữ liệu đều được phản ánh ngay lập tức.
 
+![Ảnh](/images/state.jpg)
+
 ### Hooks – Cách Mạng Trong Quản Lý State
 React Hooks như **useState** và **useEffect** mang đến sự đơn giản và mạnh mẽ:
 - **useState**: Quản lý trạng thái trong functional components.
@@ -29,6 +33,8 @@ Tôi đã xây dựng một ứng dụng thời gian thực sử dụng Hooks, n
 Khóa học còn giúp tôi nắm vững **React Router**, công cụ quan trọng để xây dựng ứng dụng đa trang:
 - **Định tuyến mượt mà**: Tạo trải nghiệm liền mạch cho người dùng.
 - **Tối ưu hoá SEO và hiệu suất**: Sử dụng các kỹ thuật như code splitting và lazy loading.
+
+![Ảnh](/images/router.png)
 
 ### Kết Luận
 Sau khoá học, tôi không chỉ nắm vững cách sử dụng React.js mà còn học được cách tổ chức mã nguồn, tối ưu hiệu suất, và xây dựng các giao diện mạnh mẽ, thân thiện với người dùng. React.js không chỉ là công cụ mà còn là chìa khóa để tôi phát triển các ứng dụng web chuyên nghiệp và sáng tạo.
