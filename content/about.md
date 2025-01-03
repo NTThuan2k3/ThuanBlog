@@ -49,3 +49,8 @@ Nếu bạn muốn trao đổi về công nghệ hoặc hợp tác trong các d�
 **Email**: nguyenthuan3399@gmail.com  
 **GitHub**: [KaWuNo](https://github.com/KaWuNo)  
 **Facebook**: [Nguyễn Thuận](https://www.facebook.com/profile.php?id=100012913711465)  
+
+### Chứng chỉ đạt được
+![Chung chi 1](/images/cc1.png)
+![Chung chi 2](/images/cc2.png)
+![Chung chi 3](/images/cc3.png)
